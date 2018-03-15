@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>turing</title></title>
+<style>
+a:link {
+text-decoration: none;
+color: black;
+}
+a:active  {
+text-decoration: underline;
+colour: black;
+}
+a:visited {
+text-decoration: none;
+color: black;
+}
+a:hover {
+text-decoration: underline;
+color: black;
+}
+</style>
+</head>
+<body bgcolour="white">
+<h1><code>
+<script language="JavaScript">
+function blinkIt() {
+ if (!document.all) return;
+ else {
+   for(i=0;i<document.all.tags('blink').length;i++){
+      s=document.all.tags('blink')[i];
+      s.style.visibility=(s.style.visibility=='visible')?'hidden':'visible';
+   }
+ }
+}
+sure = new Array;
+sure[1]="sure";
+sure[2]="certain";
+sure[3]="positive";
+sure[4]="without error";
+sure[5]="without doubt";
+sure[6]="correct";
+sure[7]="lying";
+sure[8]="cheating";
+surevalue = (Math.round((Math.random()*7))+1)
+document.write("End user, are you " + sure[surevalue] +"?<blink>_</blink>");
+</script>
+</code></h1>
+<input type="button" value="yes" onClick="window.location='turing2.html'" />
+<input type="button" value="no" onClick="window.location='turing.html'" />
+<script type="text/javascript">
+setTimeout('Redirect()',60000);
+function Redirect()
+{
+ location.href = 'turing.html';
+}
+</script></body>
+</html>

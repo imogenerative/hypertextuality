@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>turing</title></title>
+<style>
+a:link {
+text-decoration: none;
+color: black;
+}
+a:active  {
+text-decoration: underline;
+colour: black;
+}
+a:visited {
+text-decoration: none;
+color: black;
+}
+a:hover {
+text-decoration: underline;
+color: black;
+}
+</style>
+</head>
+<body bgcolour="white">
+<script type="text/javascript">
+function blinkIt() {
+ if (!document.all) return;
+ else {
+   for(i=0;i<document.all.tags('blink').length;i++){
+      s=document.all.tags('blink')[i];
+      s.style.visibility=(s.style.visibility=='visible')?'hidden':'visible';
+   }
+ }
+}
+</script>
+<h1><code>End user, are you human?<blink>_</blink></code></h1>
+<input type="button" value="yes" onClick="window.location='hypertext.html'" />
+<input type="button" value="no" onClick="window.location='turing2.html'" />
+<script type="text/javascript">
+setTimeout('Redirect()',60000);
+function Redirect()
+{
+ location.href = 'hypertext.html';
+}
+</script></body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>rabbits</title>
+<style>
+body {
+font-family: Arial;
+}
+a:link {
+text-decoration: none;
+color: black;
+}
+a:active  {
+text-decoration: underline;
+colour: black;
+}
+a:visited {
+text-decoration: none;
+color: black;
+}
+a:hover {
+text-decoration: underline;
+color: black;
+}
+</style>
+</head>
+<body>
+<p><b>
+<script language="JavaScript">
+loop = 0
+stop = 16+(Math.round((Math.random()*16)))
+while (loop<=stop)
+{
+rnd = 8+(Math.round((Math.random()*23)+1))
+document.write('<marquee behavior="alternate" scrollamount="'+rnd+'">follow the white rabbit</marquee>');
+document.write('<p>&nbsp;</p>');
+loop = loop+1
+}
+</script>
+</b></p>
+<script type="text/javascript">
+setTimeout('Redirect()',60000);
+function Redirect()
+{
+ location.href = 'hypertext.html';
+}
+</script></body>
+</html>

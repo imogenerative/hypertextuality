@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>dead space</title></title>
+<style>
+a:link {
+text-decoration: none;
+color: black;
+}
+a:active  {
+text-decoration: underline;
+colour: black;
+}
+a:visited {
+text-decoration: none;
+color: black;
+}
+a:hover {
+text-decoration: underline;
+color: black;
+}
+p{position:absolute;bottom:0;right:0;}
+</style>
+</head>
+<body bgcolour="white">
+<textarea name="deadspace" cols="80" rows="10">
+This is a dead space.  Please enter your thoughts*.
+</textarea><br>
+<input type="button" value="Submit" onClick="window.location='hypertext.html'" />
+<p><i>* Thoughts will be deleted on submission.</i></p>
+<script type="text/javascript">
+setTimeout('Redirect()',60000);
+function Redirect()
+{
+ location.href = 'hypertext.html';
+}
+</script></body>
+</html>

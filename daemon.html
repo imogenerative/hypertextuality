@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>daemon</title>
+<style>
+a:link {
+text-decoration: none;
+color: black;
+}
+a:active  {
+text-decoration: underline;
+colour: black;
+}
+a:visited {
+text-decoration: none;
+color: black;
+}
+a:hover {
+text-decoration: underline;
+color: black;
+}
+</style>
+</head>
+<body bgcolour="white">
+<script type="text/javascript">
+function blinkIt() {
+ if (!document.all) return;
+ else {
+   for(i=0;i<document.all.tags('blink').length;i++){
+      s=document.all.tags('blink')[i];
+      s.style.visibility=(s.style.visibility=='visible')?'hidden':'visible';
+   }
+ }
+}
+</script>
+<code>
+--> The <a href=hypertext.html>PPP daemon</a> has died.<br>
+--> Auto reconnect will be attempted in 0 seconds.<br>
+--> Initialising modem.<br>
+--> Sending: ATZ<br>
+ATZ<br>
+OK<br>
+--> Modem initialised.<br>
+--> Sending: ATD<br>
+--> Waiting for carrier.<br>
+ATD<br>
+CONNECT ERROR<br>
+--> No carrier detected.&nbsp;&nbsp;Aborting PPP immediately.<br>
+--> The <a href=hypertext.html>PPP daemon</a> is dead.<br>
+--> Long live the <a href=hypertext.html>PPP daemon</a>.<br>
+<blink>_</blink> 
+</code>
+<script type="text/javascript">
+setTimeout('Redirect()',60000);
+function Redirect()
+{
+ location.href = 'hypertext.html';
+}
+</script></body>
+</html>
